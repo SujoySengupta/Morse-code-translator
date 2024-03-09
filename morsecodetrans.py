@@ -34,7 +34,7 @@ def decode(morse_code):
                 decipher += list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT.values()).index(citext)]
                 citext = ''
     return decipher
-print('1. Encode a message \n2. Decode a message\n')
+print('1. Encode a message \n2. Decode a message')
 inp=int(input('Select one of the following options (1/2): '))
 if inp == 1:
     message = input("Enter the message: ")
@@ -44,4 +44,4 @@ elif inp == 2:
     morse_code = input("Enter the morse code: ")
     print(f"The decoded more code has the message:\n{decode(morse_code)}")
 else:
-    print("Wrong option chosen. please try again.")
+    print("Wrong option chosen. Please try again.")
